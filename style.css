@@ -1,18 +1,44 @@
-*{
+@media (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+      background-color: lightblue;
+    }
+  }
+/* Reset default margin, padding, and font family */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.hero{
+/* Styles for the header */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 170vh;
+    background: #eff4fd;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cc8c8c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #eff4fd;
-
+    background: #9eadca;
 }
 
-nav{
+nav {
     display: flex;
     width: 84%;
     margin: auto;
@@ -20,167 +46,70 @@ nav{
     justify-content: space-between;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: blue;
 }
 
-.detail{
-    margin-left: 8%;
-    margin-top: 15%;
-}
-
-.detail{
-    background: #9ea0bc;
-    padding: 10px 18px;
+/* Box Styles */
+.detail, .detail2, .quote {
+    background: #e4d1b2;
+    padding: 0px px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 500px;
+    border-radius: 7px;
+    border-style: groove;
+    align-items: center;
 }
 
-.detail h1{
+.detail h1, .quote h3 {
     font-size: 30px;
-    color:black;
+    color: black;
     margin-bottom: 20px;
 }
 
-.detail p{
+.detail p, .quote p {
     color: #212121;
     padding: 22px;
 }
 
-.images{
-    width: 45%;
-    height: 80%;
+/* Images Styles */
+.images {
+    width: 20%;
+    height: 120%;
     position: absolute;
     bottom: 0;
-    right: 100px;
-}
-
-.images img{
-    height: 100%;
-    position: absolute;
-    left: 20%;
-    bottom: 0;
-}
-
-
-.quote{
-    margin-left: 8%;
-    margin-top: 15%;
-}
-.quote{
-    background: #9ea0bc;
-    padding: 10px 18px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.quote h3{
-    font-size: 30px;
-    color:black;
-    margin-bottom: 20px;
-}
-
-.detail p{
-    color: #212121;
-    padding: 22px;
-}
-
-body{
-    margin: 0;
-    font-family: sans-serif;
-}
-
-.section{
-    background-color: #212121;
+    right: 1000px;
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 60%;
-    margin: 10rem auto 0 auto;
+    align-items: center;
 }
-.section img{
-    height: 250px;
-}
-.section h1{
-    margin: 0;
-    color: greenyellow;
-}
-.section p{
-    color: #c0bdbd;
-    margin-right: 15px;
+.images img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    flex: 1;
 }
 
-.section1{
-    background-color: #212121;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 60%;
-    margin: 10rem auto 0 auto;
-}
-.section1 img{
-    height: 250px;
-}
-.section1 h1{
-    margin: 0;
-    color: greenyellow;
-}
-.section1 p{
-    color: #c0bdbd;
-    margin-right: 15px;
+.lift, .army, .app, .cam, .art {
+    width: 500px;
+    height: 400px;
 }
 
-.section3{
-    background-color: #212121;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 60%;
-    margin: 10rem auto 0 auto;
-}
-.section3 img{
-    height: 250px;
-}
-.section3 h1{
-    margin: 0;
-    color: greenyellow;
-}
-.section3 p{
-    color: #c0bdbd;
-    margin-right: 15px;
-}
-
-.section4{
-    background-color: #212121;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 60%;
-    margin: 10rem auto 0 auto;
-}
-.section4 img{
-    height: 250px;
-}
-.section4 h1{
-    margin: 0;
-    color: greenyellow;
-}
-.section4 p{
-    color: #c0bdbd;
-    margin-right: 15px;
+.me {
+    width: 300px;
+    height: 400px;
 }
